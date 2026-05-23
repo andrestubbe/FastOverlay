@@ -1,0 +1,6 @@
+﻿LIBRARY fastoverlay
+EXPORTS
+    ; JNI Method Exports
+    ; Format: Java_packagename_Classname_methodName
+    
+    Java_fastoverlay_FastOverlay_doSomethingNative
