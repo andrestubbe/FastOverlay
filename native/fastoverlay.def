@@ -1,6 +1,13 @@
-﻿LIBRARY fastoverlay
+LIBRARY fastoverlay
 EXPORTS
-    ; JNI Method Exports
-    ; Format: Java_packagename_Classname_methodName
-    
-    Java_fastoverlay_FastOverlay_doSomethingNative
+    Java_fastoverlay_FastOverlay_initEngine
+    Java_fastoverlay_FastOverlay_disposeEngine
+    Java_fastoverlay_FastOverlay_createWindow
+    Java_fastoverlay_FastOverlay_createChildWindow
+    Java_fastoverlay_FastOverlay_destroyWindow
+    Java_fastoverlay_FastOverlay_setWindowPosition
+    Java_fastoverlay_FastOverlay_setWindowSize
+    Java_fastoverlay_FastOverlay_updateWindowBitmap
+    Java_fastoverlay_FastOverlay_setWindowVisible
+    Java_fastoverlay_FastOverlay_setVisualOffset
+    Java_fastoverlay_FastOverlay_setWindowProperties
