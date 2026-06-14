@@ -1,4 +1,4 @@
-﻿# FastOverlay 0.1.0 [ALPHA] — High-Performance Native Overlay API for Java
+# FastOverlay 0.1.0 [ALPHA-2026-06] � High-Performance Native Overlay API for Java
 
 [![Status](https://img.shields.io/badge/status-0.1.0-brightgreen.svg)](https://github.com/andrestubbe/FastOverlay/releases/tag/0.1.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows%2010+-lightgrey.svg)]()
 [![JitPack](https://img.shields.io/badge/JitPack-ready-green.svg)](https://jitpack.io/#andrestubbe/FastOverlay)
 
-**⚡ A zero-latency native overlay module for the FastJava ecosystem. Create click-through, hardware-accelerated windows
+**? A zero-latency native overlay module for the FastJava ecosystem. Create click-through, hardware-accelerated windows
 for visual feedback.**
 
 FastOverlay provides an ultra-fast way to draw on top of other applications. Built for bot visualization, UI
@@ -25,10 +25,10 @@ debugging, and AI-driven feedback loops that require flicker-free native transpa
 
 ## Features
 
-- **✨ Native Transparency**: Hardware-accelerated, click-through overlay windows.
-- **⚡ Zero Latency**: Direct DirectX/GDI+ rendering bypassing Swing/AWT.
-- **📦 Focus Agnostic**: Completely non-intrusive native window management.
-- **🚀 Smooth Rendering**: Flicker-free visualization for real-time path drawing.
+- **? Native Transparency**: Hardware-accelerated, click-through overlay windows.
+- **? Zero Latency**: Direct DirectX/GDI+ rendering bypassing Swing/AWT.
+- **?? Focus Agnostic**: Completely non-intrusive native window management.
+- **?? Smooth Rendering**: Flicker-free visualization for real-time path drawing.
 
 ## Installation
 
@@ -79,10 +79,10 @@ dependencies {
 
 Download the latest JARs directly to add them to your classpath:
 
-1. 📦 *
+1. ?? *
    *[fastoverlay-0.1.0.jar](https://github.com/andrestubbe/FastOverlay/releases/download/0.1.0/fastoverlay-0.1.0.jar)
    ** (The Core Library)
-2. ⚙️ **[fastcore-0.1.0.jar](https://github.com/andrestubbe/FastCore/releases/download/0.1.0/fastcore-0.1.0.jar)** (
+2. ?? **[fastcore-0.1.0.jar](https://github.com/andrestubbe/FastCore/releases/download/0.1.0/fastcore-0.1.0.jar)** (
    The Mandatory Native Loader)
 
 > [!IMPORTANT]
@@ -92,17 +92,17 @@ Download the latest JARs directly to add them to your classpath:
 
 ## License
 
-MIT License — See [LICENSE](LICENSE) file for details.
+MIT License � See [LICENSE](LICENSE) file for details.
 
 ---
 
 ## Related Projects
 
-- [FastCore](https://github.com/andrestubbe/FastCore) — Native Library Loader for Java
-- [FastOverlay](https://github.com/andrestubbe/FastOverlay) — High-performance RawInput engine
-- [FastTheme](https://github.com/andrestubbe/FastTheme) — Advanced UI styling engine
+- [FastCore](https://github.com/andrestubbe/FastCore) � Native Library Loader for Java
+- [FastOverlay](https://github.com/andrestubbe/FastOverlay) � High-performance RawInput engine
+- [FastTheme](https://github.com/andrestubbe/FastTheme) � Advanced UI styling engine
 
 ---
-**Part of the FastJava Ecosystem** — *Making the JVM faster.*
+**Part of the FastJava Ecosystem** � *Making the JVM faster.*
 
 
