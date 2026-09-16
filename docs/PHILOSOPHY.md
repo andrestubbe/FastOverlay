@@ -1,29 +1,27 @@
-﻿# The Philosophy of FastOverlay
+# The Philosophy of FastOverlay
 
 > [!IMPORTANT]
-> **"Keine Kopien. Niemals. Kritischer JNI-Pfad. Native-First Performance."**
+> **"Zero copies. Zero flicker. Hardware-accelerated DirectComposition. Native-first transparency."**
 
-FastOverlay is built on the principle that modern Java applications require **native-first** acceleration for performance-critical operations that the standard JVM APIs don't fully optimize.
+FastOverlay is built on the principle that modern Java applications require **native-first** acceleration for performance-critical UI overlays that standard JVM APIs do not support without severe latency and visual artifacting.
 
 ## Core Tenets
 
-1.  **Native-First Execution**
-    Bypass standard Java layers to reach the physical limits of the hardware using hand-tuned C++ and SIMD intrinsics.
+1. **Hardware-Accelerated DirectComposition**
+   Bypass heavyweight Swing repaint managers and GDI blitting by rendering directly to native layered DWM surfaces with GPU-side visual transformations.
 
-2.  **Zero-Copy JNI Architecture**
-    Minimize JNI transition costs by using direct memory access patterns and avoiding implicit memory copies between the JVM and the native layer.
+2. **True Click-Through Transparency**
+   Provide genuine OS-level input pass-through (`WS_EX_TRANSPARENT`), allowing overlays to float invisibly above full-screen games, IDEs, and browser windows without stealing focus or disrupting mouse clicks.
 
-3.  **Deterministic Latency**
-    Eliminate variance caused by JIT warm-up or garbage collection stalls in critical hot-paths.
+3. **Deterministic Real-Time Frame Pacing**
+   Achieve fluid 60 to 120 FPS animations without garbage collection stalls or EDT jitter.
 
-4.  **Hardware-Aware Optimization**
-    Leverage modern CPU features (AVX, SSE, NEON) to process data at hardware-native speeds.
-
-5.  **Blueprint Consistency**
-    As part of the **FastJava** ecosystem, FastOverlay adheres to a standardized architecture:
-    *   **Native Backend**: Direct C++ implementation.
-    *   **Unified Loading**: Powered by `FastCore`.
-    *   **Premium Quality**: Built for high-performance systems and autonomous agents.
+4. **Blueprint Consistency**
+   As part of the **FastJava** ecosystem, FastOverlay adheres to a standardized architecture:
+   - **Native Backend**: Hand-tuned C++ with Direct2D/DirectComposition.
+   - **Unified Loading**: Powered by `FastCore`.
+   - **Zero Overhead**: Engineered for autonomous AI agent feedback, vision robotics, and debugging HUDs.
 
 ---
-**⚡ FastOverlay — Powering the next generation of Native Java.**
+
+**Part of the FastJava Ecosystem**. *Making the JVM faster.* 🚀

@@ -1,24 +1,27 @@
-﻿# FastOverlay Roadmap 🗺️
+# FastOverlay Roadmap 🗺️
 
-**Vision:** To provide the fastest possible native primitives for [Functionality] by aggressively bypassing bottlenecks in standard Java.
+**Vision:** High-performance, zero-latency DirectComposition overlay substrate for autonomous agents, robotics HUDs, and real-time UI debugging.
 
 ## 🟢 v0.1.0: Initial Release (Current)
-- [x] **Core Native Engine**: Basic JNI implementation.
-- [x] **Blueprint Standards**: README, Reference, and Philosophy integration.
-- [ ] **Basic Performance Suite**: Initial benchmarks vs standard Java.
+- [x] **DirectComposition Engine**: Hardware-layered DWM window substrate with GPU compositing.
+- [x] **Dynamic Click-Through**: Instant runtime toggling between click-through and solid input states.
+- [x] **Visual Translation**: Sub-millisecond hardware offset manipulation without Win32 window movement.
+- [x] **Swing Integration**: `FastOverlayPanel` child component for standard Java frames.
+- [x] **FastCore Integration**: Automated DLL extraction and native loading.
 
-## 🟡 v0.2.0: Optimization Phase
-- [ ] **SIMD Acceleration**: Implement AVX2/SSE4.2 paths for core loops.
-- [ ] **Software Prefetching**: Optimize memory access patterns.
-- [ ] **Alignment Enforcement**: Ensure zero-penalty memory boundaries.
+## 🟡 v0.2.0: Primitives & Batching
+- [ ] **Agent Vector Primitives**: Native C++ Direct2D primitives (`drawRect`, `drawLine`, `drawText`) via JNI batching.
+- [ ] **DirectWrite Typography**: Sub-pixel anti-aliased font rendering directly on native surfaces.
+- [ ] **Multi-Monitor Bounds**: Auto-detection and virtual desktop spanning across mixed DPI monitors.
 
-## 🟠 v0.5.0: Platform & Logic Expansion
-- [ ] **ARM NEON Port**: Parity for Apple Silicon/Mobile.
-- [ ] **Advanced Features**: Multi-threaded paths and complex batch operations.
+## 🟠 v0.5.0: Platform Expansion
+- [ ] **Linux Wayland / X11**: Wayland subsurface overlay and X11 composite window pass-through.
+- [ ] **macOS Support**: `NSWindow` non-activating floating translucent panel substrate.
 
 ## 🔴 v1.0.0: Production Hardening
-- [ ] **Full Stability Audit**: Long-run stress testing.
-- [ ] **Enterprise Support**: NUMA-awareness and Large Pages support.
+- [ ] **Full Stability & Memory Audit**: Long-run 120 FPS stress testing and leak verification.
+- [ ] **Direct3D 11 Surface Sharing**: Zero-copy surface sharing with `FastScreen` and `FastVulkan`.
 
 ---
-**Focus:** Performance is our USP. We optimize where Java stops.
+
+**Part of the FastJava Ecosystem**. *Making the JVM faster.* 🚀
