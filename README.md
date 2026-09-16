@@ -1,4 +1,4 @@
-# FastOverlay 0.1.0 [ALPHA]: High-Performance Native Transparent Overlay API for Java
+# FastOverlay 0.1.0 [ALPHA-2026-07-08]: High-Performance Native Transparent Overlay API for Java
 
 [![Status](https://img.shields.io/badge/status-0.1.0-brightgreen.svg)](https://github.com/andrestubbe/FastOverlay/releases/tag/0.1.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
