@@ -12,9 +12,7 @@
 
 **FastOverlay** provides ultra-fast native overlay windows directly composited by the Windows Desktop Window Manager (DWM). Designed for AI agent bounding-box visualization, robotics HUDs, game telemetry, and UI debugging with zero flickering, zero AWT EDT lag, and true OS-level click-through pass-through (`WS_EX_TRANSPARENT`).
 
-[**Watch Showcase Demo (YouTube)**](https://www.youtube.com/watch?v=b3X2zFjV6GU&list=PL-mASGDMkCUqJ0bXAJP28ykqPP9RqMMsA)
-
-[![FastOverlay Showcase](docs/screenshot.png)](https://www.youtube.com/watch?v=b3X2zFjV6GU&list=PL-mASGDMkCUqJ0bXAJP28ykqPP9RqMMsA)
+![FastOverlay Showcase](docs/screenshot.png)
 
 ---
 
@@ -139,6 +137,7 @@ Standard Java GUI toolkits (Swing `JWindow`, JavaFX transparent stages) are noto
 | Case | Java Example | Launcher | Description |
 |:---|:---|:---|:---|
 | **Animated DirectComposition HUD** | [Demo.java](examples/Demo/src/main/java/fastoverlay/Demo.java) | `run-demo.bat` | 60 FPS floating HUD showcasing GPU translation and 4-second dynamic click-through toggle. |
+| **DirectComposition JMH Benchmarks** | [Benchmark.java](examples/Benchmark/src/main/java/fastoverlay/Benchmark.java) | `run-benchmark.bat` | JMH throughput benchmark measuring repaint speed, sub-millisecond translation, and click-through toggles. |
 
 ---
 

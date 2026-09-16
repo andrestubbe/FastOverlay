@@ -1,4 +1,4 @@
-﻿# FastOverlay Examples
+# FastOverlay Examples
 
 This folder contains standalone example projects to demonstrate and test the library.
 
@@ -14,12 +14,15 @@ mvn compile exec:java
 
 ## Benchmark
 
-The `Benchmark` project compares the performance of the native FastOverlay library against standard Java equivalents.
+The `Benchmark` project provides JMH (Java Microbenchmark Harness) performance measurements for native DirectComposition overlay operations.
 
 To run it:
 ```bash
-cd Benchmark
-mvn compile exec:java
-```
+# From module root:
+run-benchmark.bat
 
-> **Note:** By default, the `pom.xml` files in these examples are configured to use `<scope>system</scope>` pointing to the `target/` directory of the parent project. This allows you to test changes immediately after building the main library without publishing to a repository. To see how an external user would use it via JitPack, check the comments inside the `pom.xml`.
+# Or manually:
+cd examples/Benchmark
+mvn clean package -DskipTests
+java --enable-native-access=ALL-UNNAMED -jar target/benchmarks.jar
+```
